@@ -1,0 +1,130 @@
+\documentclass[11pt]{article}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\usepackage{xcolor}
+\hypersetup{
+	linktoc=all,
+	colorlinks,
+	linkcolor={black},
+	urlcolor={blue!60!black}
+}
+
+\usepackage[margin=2cm]{geometry}
+\newlist{level}{enumerate}{10}
+\setlist[level]{label*=\arabic*., font=\maybeHeadItem}
+\newcommand{\headItem}[1]{\global\isHeadtrue\item {\bfseries #1}}
+\newcommand{\maybeHeadItem}{%
+	\ifisHead\bfseries\global\isHeadfalse\fi%
+}
+\newif\ifisHead
+
+\NewDocumentCommand{\name}{ m }{{\bfseries #1}}
+\NewDocumentCommand{\email}{ m }{ #1 }
+
+\title{Glasgow University Cyber Security Society Constitution}
+\date{\today}
+\author{Mate Kukri\\ Joe Rose\\ Abigail Whelan}
+
+\begin{document}	
+	\maketitle
+	\begin{level}
+		\headItem{Name}
+		
+		Glasgow University Cyber Security Society (GUSEC)
+		
+		\headItem {Purposes}
+		\begin{level}
+			\item To allow students to communicate and learn alongside others with an interest in cyber security.
+			\item To give students the ability to approach problems in a creative way in order to find a solution.
+			\item To introduce students to the basics of cyber security and answer any questions they may have.
+			\item To show students how they can keep their accounts and data secure online.
+			\item To educate students on the dangers present in every-day devices and how to minimise these dangers.
+			
+		\end{level}
+	
+		\headItem {Activities}
+		\begin{level}
+			\item We run regular workshops which allow students to strengthen their skills in penetration testing in a safe environment. Students are encouraged to group up and learn with others rather than following instructions as this provides a more casual setting for learning. During these events students will learn about the importance of account security, how to choose secure passwords and how to use Google as a tool to find data on yourself. By attacking systems in a safe and legal environment, students will get a better understanding of how their data can be accessed and stolen and how to protect against this. These workshops are available to students of any skill level -- it is intended that students of a higher skill level share their knowledge with newer students.
+			\item Resources will be provided to show students how to setup a virtual environment so that they can safely practice their new skills and access the labs from anywhere.
+			\item Guides and tutorials will be provided to students who are new to the cyber security field and would like to find out more.
+			
+		\end{level}
+
+		\headItem {Membership}
+		\begin{level}
+			\item Full membership shall be open to registered students of Glasgow University only.
+			\item Non-students may join as Associate members.
+			\item Associate members (non-students) shall not account for more than 20\% of the total membership.
+			
+		\end{level}
+	
+		\headItem {Governance}
+		\begin{level}
+			\item The club/society shall be under the control of membership.
+			\item The business of the society shall be conducted by an elected committee of full members.
+			\item Any member who is a registered student shall have full voting rights at General Meetings of the club/society. Associate members have no voting rights.
+			\item The society shall have at least three office-bearers: President, Treasurer and Secretary. 
+			\item The society shall have two additional, non-essential, office-bearers: Vice-President and General Board Member.
+			\item Office bearers shall be elected by the membership at the Annual General meeting or at an Extraordinary General Meeting called to elect a replacement during the event of a vacancy.
+			\item Any full member of the club/society is entitled to stand for the office bearer positions.
+			\item No full member should be barred from standing for office in the club/society unless the position is in existence for a particular group or community of interest.
+			\item All elections must be held by secret ballot.
+			\item All office bearers shall be registered students at the University of Glasgow and shall not have opted out of SRC representation under the Education Act 1994.
+			\item The Annual General Meeting, at which office bearers shall be elected and where the clubs/societies accounts shall be submitted and approved by the membership shall be called with not less than 10 working days notice to the membership.
+			\item Resignations from the committee shall be instituted by a letter of resignation to the secretary of the club/society. In the case of the resignation of the secretary, resignation may be instituted by a letter to the president.
+			
+		\end{level}
+		
+		\headItem {Equal Opportunities Statement}
+		
+		The society will provide and promote equal opportunities, whatever a person’s race, colour, ethnic or national origin, religion, beliefs, sex, sexual orientation, gender identity, HIV status, age, physical or mental disability, state of health, appearance, status, family circumstances.
+		
+		\headItem {Complaints and Disputes}
+		\begin{level}
+			
+			\headItem {Complaints Process}
+			\begin{level}
+				\item All complaints should be addressed to and delt by the president of the society
+				
+			\end{level}
+		
+			\headItem {Code of Conduct}
+			\begin{level}
+				\item Members and office-bearers of the society must treat each other with respect, adhere to equality best practice, not act in conflict with the interests of the society or bring the society into disrepute.
+				\item Members and office-bearers of the society must at all times follow the \href{https://www.gla.ac.uk/myglasgow/senateoffice/policies/uniregs/regulations2020-21/feesandgeneral/studentsupportandconductmatters/reg33/}{The Univeristy of Glasgow Code of Conduct}
+				
+			\end{level}
+		
+			\headItem {Disciplinary Process}
+			\begin{level}
+				\item Where behaviour of members may constitute a breach of \href{https://www.gla.ac.uk/myglasgow/senateoffice/policies/uniregs/regulations2020-21/feesandgeneral/studentsupportandconductmatters/reg33/}{The Univeristy of Glasgow Code of Conduct}, this should be reported to \href{mailto:student-conduct@glasgow.ac.uk}{student-conduct@glasgow.ac.uk}.
+				\item In cases of gender-based violence or sexual assault, this must be immediately reported to \href{https://www.gla.ac.uk/myglasgow/students/safetyhealth/firstresponders/#howtocontactafirstresponder}{University of Glasgow First Responders}
+				
+			\end{level}
+			
+		\end{level}
+	
+		\headItem {Data Protection}
+		\begin{level}
+			\item The club/society records personal information about its members (e.g names, contact details, etc) for the purposes of running the club/society. This information will be held securely and only for as long as it is needed. The information will not be sold or otherwise passed on to third parties without individuals’ consent. Club/society members have the right to a copy of the information held about them on request, and to correct any inaccuracies in the information held.
+			\item Upon registration, your name, student email address and Discord tag will be stored in a private cloud which only Board members have access to.
+			\item Every year the SRC requests an updated list of members in the society – in which we will send a list including your name, GUID and position in the society.
+			
+		\end{level}
+	
+		\headItem {Constitutional Amendments}
+		\begin{level}
+			\item The membership may make constitutional amendments at the Annual General Meeting.
+			\item On receipt of a petition signed by 25 percent of the membership, the secretary shall give 7 working days notice of an Extraordinary General meeting to consider submitted amendments.
+			
+			
+		\end{level}
+	
+	\end{level}
+	
+	
+	
+	
+\end{document}
